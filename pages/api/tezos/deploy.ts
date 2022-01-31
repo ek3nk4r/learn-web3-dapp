@@ -25,7 +25,7 @@ export default async function deploy(
 
     res.status(200).json({
       contractAddress: contract.address,
-      hash: operation.hash
+      hash: operation.hash,
     });
   } catch (error) {
     let errorMessage = error instanceof Error ? error.message : 'Unknown Error';
